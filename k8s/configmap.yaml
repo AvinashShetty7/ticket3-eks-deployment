@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap-ticket
+data:
+  MONGODB: "mongodb+srv://avinashashetty2004_db_user:aviatlas2004@cluster0.qojfs0l.mongodb.net"
+  DB_NAME: "IssueTicket"
+  JWT_SECRET: "iamgodgodisgreat"
+  PORT: "3000"

@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: ingress-ticket
+spec:
+  ingressClassName: nginx
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: my-front-service
+            port:
+              number: 80
+      - path: /apis
+        pathType: Prefix
+        backend:
+          service:
+            name: my-back-service
+            port:
+              number: 3000

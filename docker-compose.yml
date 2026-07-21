@@ -1,0 +1,20 @@
+# version: "3.9"
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+    image: avio3/frontimage1:v1
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./backend
+    image: avio3/backendimage1:v1
+    ports:
+      - "3000:3000"
+    env_file:
+      - ./backend/.env
