@@ -1,15 +1,15 @@
 frontend:
   image:
 <<<<<<< HEAD
-    tag: "v1"
+    tag: 29947359615
     
 backend:
   image:
-    tag: "v1"
+    tag: 29947359615
 =======
-    tag: 29946261947
+    tag: 29947359615
     
 backend:
   image:
-    tag: 29946261947
+    tag: 29947359615
 >>>>>>> 75acc43d16fc1ba43c58ac5147dc9e968621d69e
