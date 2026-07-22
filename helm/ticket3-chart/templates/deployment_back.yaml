@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend-deployment
-        image: avi03/backendimage1:{{ .Values.backend.image.tag}}
+        image: avi03/backendimage1:{{ .Values.backend.image.tag }}
         ports:
         - containerPort: 3000
         env:
