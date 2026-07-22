@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: front-deployment
-        image: avi03/frontimage1:v1
+        image: avi03/frontimage1:{{ .Values.frontend.image.tag}}
         ports:
         - containerPort: 3000

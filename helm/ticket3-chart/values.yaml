@@ -1,0 +1,7 @@
+frontend:
+  image:
+    tag: v1
+    
+backend:
+  image:
+    tag: v1
