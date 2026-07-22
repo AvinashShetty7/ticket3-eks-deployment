@@ -1,7 +1,7 @@
 frontend:
   image:
-    tag: 29940092746
+    tag: v1
     
 backend:
   image:
-    tag: 29940092746
+    tag: v1
